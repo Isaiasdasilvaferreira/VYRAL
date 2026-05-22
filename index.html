@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Vyral | Visual Impact Agency</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="./Imagens/Logo VYRAL.webp">
+  <link rel="stylesheet" href="./CSS/Styleindex.css">
+  <link rel="stylesheet" href="./CSS/Styleresponsividade.css">
+</head>
+
+<body>
+
+  <div class="noise-overlay"></div>
+  <div class="sakura-canvas" id="sakuraCanvas"></div>
+
+  <div class="app-container">
+    <nav class="nav">
+      <div class="nav-container">
+        <div class="logo-wrapper">
+          <div class="logo-mark"></div>
+          <div class="logo-text">VYRAL<span>Visual Impact Agency</span></div>
+        </div>
+        <div class="nav-links">
+          <a href="#home" class="nav-link active" data-key="navHome">Home</a>
+          <a href="#portfolio" class="nav-link" data-key="navPortfolio">Portfolio</a>
+          <a href="#services" class="nav-link" data-key="navServices">Services</a>
+          <a href="#testimonials" class="nav-link" data-key="navReviews">Reviews</a>
+          <a href="#contact" class="nav-link" data-key="navContact">Contact</a>
+        </div>
+        <div class="nav-accents">
+          <select id="languageSelect" class="lang-select">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="pt">Português</option>
+          </select>
+          <a href="#contact" class="nav-cta" data-key="navCta">Start a project</a>
+        </div>
+        <div class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+      <div class="mobile-menu-container">
+        <div class="mobile-menu-header">
+          <div class="logo-text">VYRAL<span>Visual Impact Agency</span></div>
+          <div class="mobile-menu-close" id="mobileMenuClose">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        <div class="mobile-menu-links">
+          <a href="#home" class="mobile-nav-link" data-key="navHome">Home</a>
+          <a href="#portfolio" class="mobile-nav-link" data-key="navPortfolio">Portfolio</a>
+          <a href="#services" class="mobile-nav-link" data-key="navServices">Services</a>
+          <a href="#testimonials" class="mobile-nav-link" data-key="navReviews">Reviews</a>
+          <a href="#contact" class="mobile-nav-link" data-key="navContact">Contact</a>
+        </div>
+        <div class="mobile-menu-accents">
+          <select id="mobileLanguageSelect" class="mobile-lang-select">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="pt">Português</option>
+          </select>
+          <a href="#contact" class="mobile-nav-cta" data-key="navCta">Start a project</a>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section id="home" class="hero-section">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="eyebrow">
+              <span class="eyebrow-line"></span>
+              <span class="eyebrow-text" data-key="eyebrow">Agência criativa premium</span>
+            </div>
+            <h1 class="hero-title"><span data-key="heroLine1">Criamos impacto</span><br><span
+                data-key="heroLine2">visual que <span class="gradient-text">converte</span></span></h1>
+            <p class="hero-description" data-key="heroDesc">Design visual estratégico, produção de imagens de alta qualidade e direção criativa para marcas que exigem excelência.</p>
+            <div class="hero-actions">
+              <a href="#portfolio" class="btn-primary" data-key="heroBtn1">Ver portfólio <i class="fas fa-arrow-right"></i></a>
+              <a href="#contact" class="btn-ghost" data-key="heroBtn2">Enviar WhatsApp <i class="fab fa-whatsapp"></i></a>
+            </div>
+            <div class="hero-stats">
+              <div class="stat-item"><span class="stat-value" data-key="stat1Value">250+</span><span class="stat-label"
+                  data-key="stat1Label">Projetos</span></div>
+              <div class="stat-item"><span class="stat-value" data-key="stat2Value">98%</span><span class="stat-label"
+                  data-key="stat2Label">Satisfação</span></div>
+              <div class="stat-item"><span class="stat-value" data-key="stat3Value">12.4M</span><span class="stat-label"
+                  data-key="stat3Label">Impressões</span></div>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="abstract-shape"></div>
+            <div class="abstract-shape two"></div>
+            <div class="carousel-card">
+              <div class="carousel-container">
+                <div class="carousel-slides">
+                  <div class="carousel-slide active">
+                    <div class="carousel-image" style="background-image: url('./Imagens/Hambuguer-VYRAL.webp');">
+                    </div>
+                    <div class="carousel-caption" data-key="carousel1">Hamburgueria · Campanha Social</div>
+                  </div>
+                  <div class="carousel-slide">
+                    <div class="carousel-image" style="background-image: url('./Imagens/PIZZARIA-VYRAL.webp');"></div>
+                    <div class="carousel-caption" data-key="carousel2">Pizzaria · Sistema de Identidade Visual</div>
+                  </div>
+                  <div class="carousel-slide">
+                    <div class="carousel-image"
+                      style="background-image: url('./Imagens/Coxinha-VYRAL.webp');">
+                    </div>
+                    <div class="carousel-caption" data-key="carousel3">Design de Embalagem · Série Premium</div>
+                  </div>
+                </div>
+                <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+                <div class="carousel-dots">
+                  <span class="dot active"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+              <div class="art-label" data-key="artLabel">Nossas últimas criações</div>
+              <div class="art-brands"><span data-key="artBrand1">Beleza</span><span data-key="artBrand2">Moda</span><span data-key="artBrand3">Tecnologia</span><span data-key="artBrand4">Estilo de Vida</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="portfolio-section">
+        <div class="section-header"><span class="section-tag" data-key="portfolioTag">Trabalhos em destaque</span>
+          <h2 class="section-title" data-key="portfolioTitle">Projetos recentes</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="portfolio-grid">
+          <div class="portfolio-card" data-image="./Imagens/Hambuguer-VYRAL.webp"
+            data-title="Hamburgueria · Social Branding" data-category="Campanha Social">
+            <div class="portfolio-media"
+              style="background-image: url('./Imagens/Hambuguer-VYRAL.webp'); background-size: cover; background-position: center;">
+              <div class="portfolio-overlay"></div>
+              <i class="fas fa-search-plus portfolio-icon"></i>
+            </div>
+            <div class="portfolio-info">
+              <h3 data-key="project1Title">Hamburgueria · Social Branding</h3>
+              <p data-key="project1Desc">Estratégia de Reels e fotografia para food service. Alto engajamento e crescimento em vendas.</p>
+              <div class="portfolio-meta"><span class="portfolio-category" data-key="project1Cat">Campanha Social</span><i class="fas fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <div class="portfolio-card" data-image="./Imagens/PIZZARIA-VYRAL.webp" data-title="Pizzaria · Identidade Visual"
+            data-category="Identidade Visual">
+            <div class="portfolio-media"
+              style="background-image: url('./Imagens/PIZZARIA-VYRAL.webp'); background-size: cover; background-position: center;">
+              <div class="portfolio-overlay"></div>
+              <i class="fas fa-search-plus portfolio-icon"></i>
+            </div>
+            <div class="portfolio-info">
+              <h3 data-key="project2Title">Pizzaria · Identidade Visual</h3>
+              <p data-key="project2Desc">Identidade visual completa e presença nas redes sociais gerando engajamento e conversões.</p>
+              <div class="portfolio-meta"><span class="portfolio-category" data-key="project2Cat">Identidade Visual</span><i class="fas fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <div class="portfolio-card" data-image="./Imagens/Coxinha-VYRAL.webp"
+            data-title="Marca Fitness · Conteúdo Digital" data-category="Direção Criativa">
+            <div class="portfolio-media"
+              style="background-image: url('./Imagens/Coxinha-VYRAL.webp'); background-size: cover; background-position: center;">
+              <div class="portfolio-overlay"></div>
+              <i class="fas fa-search-plus portfolio-icon"></i>
+            </div>
+            <div class="portfolio-info">
+              <h3 data-key="project3Title">Salgados · Conteúdo Digital</h3>
+              <p data-key="project3Desc">Criação de conteúdo visual e direção criativa para campanhas de alto desempenho.</p>
+              <div class="portfolio-meta"><span class="portfolio-category" data-key="project3Cat">Direção Criativa</span><i class="fas fa-chevron-right"></i></div>
+            </div>
+          </div>
+          <div class="portfolio-card" data-image="https://placehold.co/800x600/5e0520/ffffff?text=Packaging+Design"
+            data-title="Marca de Cosméticos · Packaging" data-category="Design de Embalagem">
+            <div class="portfolio-media"
+              style="background-image: url('https://placehold.co/600x450/5e0520/ffffff?text=Packaging+Design'); background-size: cover; background-position: center;">
+              <div class="portfolio-overlay"></div>
+              <i class="fas fa-search-plus portfolio-icon"></i>
+            </div>
+            <div class="portfolio-info">
+              <h3 data-key="project4Title">Marca de Cosméticos · Packaging</h3>
+              <p data-key="project4Desc">Design de embalagem e estratégia visual para fortalecer a presença de marca.</p>
+              <div class="portfolio-meta"><span class="portfolio-category" data-key="project4Cat">Design de Embalagem</span><i class="fas fa-chevron-right"></i></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="services-section">
+        <div class="section-header"><span class="section-tag" data-key="servicesTag">O que oferecemos</span>
+          <h2 class="section-title" data-key="servicesTitle">Nossas especialidades</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-palette"></i></div>
+            <h3 data-key="service1Title">Design de Identidade Visual</h3>
+            <p data-key="service1Desc">Sistemas completos de identidade de marca, design de logotipos e desenvolvimento de linguagem visual.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-camera"></i></div>
+            <h3 data-key="service2Title">Fotografia Editorial</h3>
+            <p data-key="service2Desc">Fotografia de alto padrão, direção de arte e produção de imagens para campanhas.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+            <h3 data-key="service3Title">Estratégia Criativa</h3>
+            <p data-key="service3Desc">Auditoria visual, direção criativa e planejamento estratégico para elevar sua marca.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-box"></i></div>
+            <h3 data-key="service4Title">Design de Embalagem</h3>
+            <p data-key="service4Desc">Design de packaging premium, mockups e ativos prontos para produção.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="testimonials-section">
+        <div class="section-header"><span class="section-tag" data-key="testimonialsTag">O que nossos clientes dizem</span>
+          <h2 class="section-title" data-key="testimonialsTitle">Depoimentos</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card"><i class="fas fa-quote-left"></i>
+            <p data-key="testimonial1">A Vyral transformou completamente nossa identidade visual. Em poucos meses, nosso reconhecimento de marca aumentou significativamente.</p>
+            <div class="testimonial-author"><strong>Sarah Chen</strong><span>CMO, Luxe Beauty</span>
+              <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            </div>
+          </div>
+          <div class="testimonial-card"><i class="fas fa-quote-left"></i>
+            <p data-key="testimonial2">A criatividade e abordagem estratégica da equipe são incomparáveis. Eles não apenas criam imagens - constroem histórias visuais.</p>
+            <div class="testimonial-author"><strong>Marcus Rodriguez</strong><span>Founder, Urban Threads</span>
+              <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            </div>
+          </div>
+          <div class="testimonial-card"><i class="fas fa-quote-left"></i>
+            <p data-key="testimonial3">Melhor investimento que fizemos para nossa marca. A qualidade das imagens e a direção criativa superaram todas as expectativas.</p>
+            <div class="testimonial-author"><strong>Jessica Williams</strong><span>Director, Nova Fitness</span>
+              <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                  class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="contact-container">
+          <div class="contact-left">
+            <div class="contact-badge" data-key="contactBadge">Vamos trabalhar juntos</div>
+            <h2 data-key="contactTitle">Pronto para elevar<br>sua marca visual?</h2>
+            <p data-key="contactDesc">Conte-nos sobre seus objetivos. Nossa equipe entrará em contato em até 24 horas com uma proposta personalizada.</p>
+            <div class="contact-channels">
+              <div class="channel"><i class="fas fa-envelope"></i><span>vyralimpactagency@gmail.com</span></div>
+              <div class="channel"><i class="fab fa-whatsapp"></i><span>11 98497-0644</span></div>
+            </div>
+            <div class="social-links"><a href="https://www.instagram.com/vyral.socialmedia"><i class="fab fa-instagram"></i></a><a href="#"><i
+                  class="fab fa-behance"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a></div>
+          </div>
+          <div class="contact-right">
+            <form id="contactForm" class="elite-form">
+              <div class="input-field">
+                <input type="text" id="fullname" required>
+                <label data-key="nameLabel">Nome completo</label>
+                <span class="focus-border"></span>
+              </div>
+              <div class="input-field">
+                <input type="email" id="emailaddr" required>
+                <label data-key="emailLabel">E-mail</label>
+                <span class="focus-border"></span>
+              </div>
+              <div class="input-field">
+                <input type="text" id="message" required>
+                <label data-key="messageLabel">Visão do projeto</label>
+                <span class="focus-border"></span>
+              </div>
+              <button type="submit" class="submit-elite" data-key="submitBtn">
+                Enviar mensagem <i class="fab fa-whatsapp"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="logo-text mini">VYRAL<span>Visual Impact Agency</span></div>
+          <p>© 2026 — Vyral | Impact Agency</p>
+        </div>
+        <div class="footer-links">
+          <a href="#" data-key="privacy" data-modal="privacy">Privacidade</a>
+          <a href="#" data-key="terms" data-modal="terms">Termos</a>
+          <a href="#" data-key="careers" data-modal="careers">Carreiras</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- INFO WIDGET MODALS -->
+  <div id="privacyModal" class="info-widget-modal">
+    <div class="info-widget-content">
+      <div class="info-widget-header">
+        <h2><i class="fas fa-shield-alt"></i> <span data-key="privacyTitle">Política de Privacidade</span></h2>
+        <span class="info-widget-close">&times;</span>
+      </div>
+      <div class="info-widget-body">
+        <div class="info-section">
+          <h3><i class="fas fa-user"></i> <span data-key="privacySection1Title">Quais dados são coletados</span></h3>
+          <p data-key="privacySection1Text">Coletamos apenas nome completo, e-mail e mensagem enviada através do formulário de contato.</p>
+        </div>
+        <div class="info-section">
+          <h3><i class="fas fa-chart-line"></i> <span data-key="privacySection2Title">Como os dados são usados</span></h3>
+          <p data-key="privacySection2Text">Os dados são utilizados exclusivamente para entrar em contato com você via WhatsApp e responder sua solicitação.</p>
+        </div>
+        <div class="info-section">
+          <h3><i class="fas fa-lock"></i> <span data-key="privacySection3Title">Armazenamento e segurança</span></h3>
+          <p data-key="privacySection3Text">Suas informações são tratadas com confidencialidade e não são armazenadas em bancos de dados internos.</p>
+        </div>
+        <div class="info-section">
+          <h3><i class="fas fa-user-shield"></i> <span data-key="privacySection4Title">Seus direitos (LGPD/GDPR)</span></h3>
+          <p data-key="privacySection4Text">Você pode solicitar a qualquer momento a remoção de seus dados entrando em contato conosco.</p>
+        </div>
+        <div class="info-section highlight">
+          <p><i class="fas fa-hand-peace"></i> <strong data-key="privacyHighlight">Seus dados não serão compartilhados com terceiros sob nenhuma circunstância.</strong></p>
+        </div>
+        <div class="info-section">
+          <h3><i class="fas fa-envelope"></i> <span data-key="privacySection5Title">Contato para questões de privacidade</span></h3>
+          <p data-key="privacySection5Text">vyralimpactagency@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="termsModal" class="info-widget-modal">
+    <div class="info-widget-content">
+      <div class="info-widget-header">
+        <h2><i class="fas fa-file-contract"></i> <span data-key="termsTitle">Termos de Uso</span></h2>
+        <span class="info-widget-close">&times;</span>
+      </div>
+      <div class="info-widget-body">
+        <div class="info-section">
+          <h3><i class="fas fa-check-circle"></i> <span data-key="termsSection1Title">Aceitação dos termos</span></h3>
+          <p data-key="termsSection1Text">Ao acessar nosso site, você concorda com todos os termos e condições descritos aqui.</p>
+        </div>
+        <div class="info-section">
+          <h3><i class="fas fa-ban"></i> <span data-key="termsSection2Title">Regras de conduta</span></h3>
+          <p data-key="termsSection2Text">É proibido enviar spam, conteúdo ofensivo, ilegal ou violar direitos autorais de terceiros.</p>
+        </div>
+        <div class="info-section">
+          <h3><i class="fas fa-copyright"></i> <span data-key="termsSection3Title">Propriedade intelectual</span></h3>
+          <p data-key="termsSection3Text">Todo o conteúdo do site (imagens, textos, logotipos) pertence à Vyral. Não é permitido copiar ou reproduzir sem autorização prévia.</p>
+        </div>
+        <div class="info-section">
+          <h3><i class="fas fa-exclamation-triangle"></i> <span data-key="termsSection4Title">Limitação de responsabilidade</span></h3>
+          <p data-key="termsSection4Text">Não nos responsabilizamos por danos indiretos decorrentes do uso do site ou de informações aqui contidas.</p>
+        </div>
+        <div class="info-section">
+          <h3><i class="fas fa-user-slash"></i> <span data-key="termsSection5Title">Rescisão</span></h3>
+          <p data-key="termsSection5Text">Podemos bloquear o acesso de usuários que violarem estes termos de uso.</p>
+        </div>
+        <div class="info-section highlight">
+          <p><i class="fas fa-gavel"></i> <strong data-key="termsHighlight">O uso não autorizado deste site pode resultar em medidas legais cabíveis.</strong></p>
+        </div>
+        <div class="info-section">
+          <h3><i class="fas fa-balance-scale"></i> <span data-key="termsSection6Title">Lei aplicável e foro</span></h3>
+          <p data-key="termsSection6Text">Este acordo é regido pelas leis brasileiras. Foro da comarca de São Paulo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="careersModal" class="info-widget-modal">
+    <div class="info-widget-content">
+      <div class="info-widget-header">
+        <h2><i class="fas fa-briefcase"></i> <span data-key="careersTitle">Carreiras</span></h2>
+        <span class="info-widget-close">&times;</span>
+      </div>
+      <div class="info-widget-body">
+        <div class="info-section">
+          <h3><i class="fas fa-door-open"></i> <span data-key="careersSection1Title">Processo seletivo</span></h3>
+          <p data-key="careersSection1Text">As vagas disponíveis são divulgadas exclusivamente em nossas redes sociais.</p>
+        </div>
+        <div class="info-section">
+          <h3><i class="fab fa-instagram"></i> <span data-key="careersSection2Title">Como se candidatar</span></h3>
+          <p data-key="careersSection2Text">Para se candidatar, envie seu currículo via Direct Message (DM) no Instagram.</p>
+        </div>
+        <div class="info-section highlight">
+          <p><i class="fas fa-heart"></i> <strong data-key="careersHighlight">Estamos sempre em busca de talentos criativos. Fique de olho nas nossas redes!</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="imageModal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <div class="modal-image-container">
+        <img id="modalImage" src="" alt="Project image">
+      </div>
+      <div class="modal-info">
+        <h3 id="modalTitle"></h3>
+        <p id="modalCategory"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="./JS/Scriptindex.js"></script>
+</body>
+
+</html>
