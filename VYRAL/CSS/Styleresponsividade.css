@@ -1,0 +1,417 @@
+@media (max-width: 1200px) { 
+    .app-container { padding: 0 32px; } 
+}
+
+@media (max-width: 992px) { 
+    .app-container { padding: 0 24px; } 
+    .hero-title { font-size: 2.8rem !important; } 
+    .hero-grid { grid-template-columns: 1fr !important; gap: 30px !important; }
+    .contact-container { grid-template-columns: 1fr !important; gap: 30px !important; }
+    .contact-section { padding: 28px 20px !important; }
+}
+
+@media (max-width: 768px) { 
+    .app-container { padding: 0 20px; } 
+    
+    .nav-container {
+        flex-wrap: nowrap;
+        gap: 12px;
+        border-radius: 40px;
+        padding: 8px 20px;
+    }
+    
+    .logo-wrapper {
+        flex: 1;
+    }
+    
+    .nav-links {
+        display: none !important;
+    }
+    
+    .nav-accents {
+        display: none !important;
+    }
+    
+    .mobile-menu-btn {
+        display: flex !important;
+    }
+    
+    .hero-title { font-size: 2.2rem !important; } 
+    .section-title { font-size: 1.7rem !important; } 
+    .portfolio-grid, 
+    .services-grid, 
+    .testimonials-grid { 
+        grid-template-columns: 1fr !important; 
+        gap: 20px !important; 
+    }
+    .contact-section { border-radius: 28px; margin: 20px 0 30px; }
+    .hero-description { max-width: 100% !important; }
+    .carousel-card { max-width: 100% !important; }
+    .carousel-slides { height: 220px !important; }
+    
+    .hero-stats { 
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        gap: 15px !important;
+        width: 100% !important;
+    }
+    
+    .hero-stats > div {
+        flex: 1 !important;
+        min-width: 80px !important;
+        text-align: center !important;
+    }
+    
+    .carousel-dots {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 8px !important;
+        margin-top: 16px !important;
+    }
+    
+    .dot {
+        display: inline-block !important;
+        width: 8px !important;
+        height: 8px !important;
+        min-width: 8px !important;
+        max-width: 8px !important;
+        border-radius: 50% !important;
+        background: rgba(94,5,32,0.3) !important;
+        transition: all 0.3s ease !important;
+        flex-shrink: 0 !important;
+        cursor: pointer;
+    }
+    
+    .dot.active {
+        width: 24px !important;
+        min-width: 24px !important;
+        max-width: 24px !important;
+        border-radius: 4px !important;
+        background: #fd88b0 !important;
+    }
+    
+    .mobile-menu-container {
+        padding: 24px 20px !important;
+    }
+    
+    .mobile-menu-header {
+        margin-bottom: 32px !important;
+        padding-bottom: 18px !important;
+    }
+    
+    .mobile-menu-header .logo-text {
+        font-size: 1.4rem !important;
+    }
+    
+    .mobile-nav-link {
+        font-size: 1.5rem !important;
+        padding: 8px 0 !important;
+    }
+    
+    .mobile-menu-links {
+        gap: 12px !important;
+        margin-bottom: 32px !important;
+    }
+    
+    .mobile-lang-select {
+        padding: 12px 16px !important;
+        font-size: 0.9rem !important;
+        background: rgba(20, 8, 12, 0.85) !important;
+    }
+    
+    .mobile-nav-cta {
+        padding: 14px 24px !important;
+        font-size: 0.95rem !important;
+    }
+}
+
+@media (max-width: 600px) { 
+    .app-container { padding: 0 16px; } 
+    .hero-actions { 
+        flex-direction: column !important; 
+        align-items: stretch !important; 
+    }
+    .btn-primary, .btn-ghost { 
+        justify-content: center !important; 
+        text-align: center;
+    }
+    .footer-inner { 
+        flex-direction: column !important; 
+        text-align: center !important; 
+        gap: 20px !important; 
+    }
+    .footer-links { 
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 16px !important;
+    }
+    .portfolio-info h3 { font-size: 1.1rem; }
+    .service-card { padding: 20px; }
+    .testimonial-card { padding: 20px; }
+    
+    .hero-stats {
+        gap: 10px !important;
+        justify-content: space-around !important;
+    }
+    
+    .hero-stats > div {
+        min-width: 70px !important;
+    }
+    
+    .stat-value {
+        font-size: 1.3rem !important;
+    }
+    
+    .stat-label {
+        font-size: 0.6rem !important;
+    }
+    
+    .carousel-dots {
+        gap: 8px !important;
+        margin-top: 14px !important;
+    }
+    
+    .dot {
+        width: 7px !important;
+        height: 7px !important;
+        min-width: 7px !important;
+        max-width: 7px !important;
+    }
+    
+    .dot.active {
+        width: 20px !important;
+        min-width: 20px !important;
+        max-width: 20px !important;
+    }
+    
+    .mobile-menu-container {
+        padding: 20px 16px !important;
+    }
+    
+    .mobile-nav-link {
+        font-size: 1.3rem !important;
+    }
+    
+    .mobile-menu-close {
+        width: 40px !important;
+        height: 40px !important;
+    }
+    
+    .mobile-menu-close i {
+        font-size: 1.2rem !important;
+    }
+    
+    .mobile-lang-select {
+        background: rgba(20, 8, 12, 0.9) !important;
+        padding: 10px 16px !important;
+        font-size: 0.85rem !important;
+        background-position: right 14px center !important;
+        background-size: 16px !important;
+    }
+}
+
+@media (max-width: 480px) { 
+    .app-container { padding: 0 14px; } 
+    .hero-title { font-size: 1.8rem !important; } 
+    .section-title { font-size: 1.4rem !important; }
+    .contact-left h2 { font-size: 1.5rem !important; }
+    .logo-text { font-size: 1rem !important; }
+    .nav-container { padding: 8px 16px !important; }
+    .carousel-slides { height: 180px !important; }
+    .carousel-btn { width: 28px; height: 28px; font-size: 0.8rem; }
+    .input-field input, 
+    .input-field textarea { font-size: 16px !important; }
+    .hero-section { padding: 20px 0 !important; }
+    .portfolio-section, 
+    .services-section, 
+    .testimonials-section { padding: 30px 0 !important; }
+    
+    .hero-stats {
+        gap: 8px !important;
+    }
+    
+    .hero-stats > div {
+        min-width: 65px !important;
+    }
+    
+    .stat-value {
+        font-size: 1.1rem !important;
+    }
+    
+    .stat-label {
+        font-size: 0.55rem !important;
+        letter-spacing: 0.5px !important;
+    }
+    
+    .carousel-dots {
+        gap: 6px !important;
+        margin-top: 12px !important;
+    }
+    
+    .dot {
+        width: 6px !important;
+        height: 6px !important;
+        min-width: 6px !important;
+        max-width: 6px !important;
+    }
+    
+    .dot.active {
+        width: 18px !important;
+        min-width: 18px !important;
+        max-width: 18px !important;
+    }
+    
+    .mobile-nav-link {
+        font-size: 1.2rem !important;
+    }
+    
+    .mobile-lang-select {
+        font-size: 0.8rem !important;
+        padding: 9px 14px !important;
+    }
+}
+
+@media (max-width: 360px) {
+    .hero-title { font-size: 1.6rem !important; }
+    .eyebrow-text { font-size: 0.6rem; letter-spacing: 2px; }
+    .btn-primary, .btn-ghost { padding: 8px 18px; font-size: 0.85rem; }
+    
+    .hero-stats {
+        gap: 6px !important;
+    }
+    
+    .hero-stats > div {
+        min-width: 55px !important;
+    }
+    
+    .stat-value {
+        font-size: 1rem !important;
+    }
+    
+    .stat-label {
+        font-size: 0.5rem !important;
+    }
+    
+    .carousel-dots {
+        gap: 5px !important;
+        margin-top: 10px !important;
+    }
+    
+    .dot {
+        width: 5px !important;
+        height: 5px !important;
+        min-width: 5px !important;
+        max-width: 5px !important;
+    }
+    
+    .dot.active {
+        width: 15px !important;
+        min-width: 15px !important;
+        max-width: 15px !important;
+    }
+    
+    .mobile-menu-container {
+        padding: 16px 14px !important;
+    }
+    
+    .mobile-nav-link {
+        font-size: 1.1rem !important;
+        padding: 6px 0 !important;
+    }
+    
+    .mobile-menu-header .logo-text {
+        font-size: 1.2rem !important;
+    }
+    
+    .mobile-lang-select {
+        font-size: 0.75rem !important;
+        padding: 8px 12px !important;
+    }
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero-section { padding: 15px 0 !important; }
+    .hero-grid { gap: 15px !important; }
+    .portfolio-media { height: 160px !important; }
+    .carousel-slides { height: 150px !important; }
+    
+    .hero-stats {
+        flex-direction: row !important;
+        gap: 20px !important;
+    }
+    
+    .carousel-dots {
+        margin-top: 10px !important;
+        padding: 4px 0 !important;
+    }
+    
+    .mobile-menu-container {
+        padding: 16px 20px !important;
+    }
+    
+    .mobile-menu-links {
+        gap: 8px !important;
+        margin-bottom: 20px !important;
+    }
+    
+    .mobile-nav-link {
+        font-size: 1.2rem !important;
+        padding: 6px 0 !important;
+    }
+    
+    .mobile-menu-header {
+        margin-bottom: 20px !important;
+        padding-bottom: 12px !important;
+    }
+    
+    .mobile-lang-select {
+        padding: 8px 16px !important;
+        font-size: 0.8rem !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .portfolio-grid { grid-template-columns: repeat(2, 1fr) !important; }
+    .services-grid { grid-template-columns: repeat(2, 1fr) !important; }
+    .hero-title { font-size: 2.5rem !important; }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .portfolio-grid { grid-template-columns: repeat(2, 1fr) !important; }
+    .services-grid { grid-template-columns: repeat(2, 1fr) !important; }
+    .testimonials-grid { grid-template-columns: repeat(2, 1fr) !important; }
+}
+
+@supports (padding: max(0px)) {
+    .app-container {
+        padding-left: max(16px, env(safe-area-inset-left));
+        padding-right: max(16px, env(safe-area-inset-right));
+    }
+    
+    @media (max-width: 768px) {
+        .app-container {
+            padding-left: max(14px, env(safe-area-inset-left));
+            padding-right: max(14px, env(safe-area-inset-right));
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-btn,
+    .dot,
+    .social-links a,
+    .submit-elite,
+    .btn-primary,
+    .btn-ghost {
+        cursor: pointer;
+    }
+    
+    .carousel-btn {
+        min-height: 36px;
+        width: 36px;
+    }
+}
